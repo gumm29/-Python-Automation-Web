@@ -1,4 +1,4 @@
-# [PYTHON] Modelo de Automacao Web
+# [PYTHON] Automação Web
 ## Usando Bahave e Selenium
 ### Para rodar, rode o comando:
 > pip install -r requirements.txt
