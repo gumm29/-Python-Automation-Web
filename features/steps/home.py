@@ -1,12 +1,10 @@
-from environment import *
-from page.home import *
-from page.email import *
-from support.commons import *
+from page.home import Home
+from page.email import Email
+from support.commons import site
 
 @given('access the site')
 def step_impl(context):
   site(context)
-
 
 @when('click in email button')
 def step_impl(context):
@@ -17,5 +15,4 @@ def step_impl(context):
 @then('check email page')
 def step_impl(context):
   page = Email(context.browser)
-  print(page.h1_email.text)
   assert page.h1_email.text == 'Login'
